@@ -63,7 +63,7 @@ hero_button_link = "/about"
 hero_button = true
 
 [params.footer]
-text = "© Copyright 2023 Goal Capital Inc."
+text = "© Copyright 2023 Polar Outfitting Nunavut"
 url = ""
 description = ""
 
@@ -225,7 +225,7 @@ pre = "Contact Us"
 [params.clients]
 enable = true
 title = "Our Clients"
-subtitle = "Goal Capital Inc. has worked with many publicly traded companies since its inception in 2007 including NYSE, NASDAQ, TSX ,TSX.V, OCT-Markets, and CSE listed clients. Please see some of Goal Capital past and present clients."
+subtitle = "Polar Outfitting Nunavut has worked with many publicly traded companies since its inception in 2007 including NYSE, NASDAQ, TSX ,TSX.V, OCT-Markets, and CSE listed clients. Please see some of Goal Capital past and present clients."
 cols = 3 # Default: 3, Available values 2,3,4,6
 
 [params.features]
