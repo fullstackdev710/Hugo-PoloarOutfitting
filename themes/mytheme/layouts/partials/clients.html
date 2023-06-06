@@ -1,0 +1,61 @@
+{{ if isset .Site.Params "clients" }}
+{{ if .Site.Params.clients.enable }}
+{{ if isset .Site.Data "clients" }}
+{{ if gt (len .Site.Data.clients) 0 }}
+<section class="bar background-white">
+   <div class="container">
+      <div class="row">
+         <div class="heading text-center">
+
+         </div>
+      </div>
+
+      {{ $elements := default 3 .Site.Params.clients.cols }}
+      {{ $clients := sort .Site.Data.clients "weight" }}
+
+      {{ $total_rows := div (len $clients) $elements }}
+
+      {{ if gt (mod (len $clients) $elements) 0 }}
+      {{ $total_rows = add $total_rows 1 }}
+      {{ end }}
+
+      {{ range $i, $sequence := seq $total_rows }}
+      <div class="row row-{{ $i }} row-{{ if eq (mod $i 2) 0 }}odd{{ else }}even{{ end }}">
+         {{ range $j, $sequence2 := (seq $elements) }}
+
+         {{ $feature_index := add (mul $i $elements) $j }}
+         {{ if lt $feature_index (len $clients) }}
+         {{ $element := index $clients $feature_index }}
+
+         <div class="col-md-4">
+            <div class="box-simple">
+               {{ with $element.url }}
+               <a href="{{ $element.url }}">
+                  {{ end }}
+                  <div class="client-img">
+                     <img src="{{ $element.image}}" alt="">
+                  </div>
+                  {{ with $element.url }}
+               </a>
+               {{ end }}
+               <p class="mt-3 mb-1"><strong>{{ $element.name | markdownify }}</strong></p>
+               <div class="d-flex justify-content-center">
+                  <a href="{{ $element.url_1 }}">{{ $element.description_1 | markdownify }}</a>
+                  {{ with $element.description_2 }}
+                  <span class="mx-1">|</span>
+                  <a href="{{ $element.url_1 }}">{{ $element.description_1 | markdownify }}</a>
+                  {{ end }}
+               </div>
+            </div>
+         </div>
+
+         {{ end }}
+         {{ end }}
+      </div>
+      {{ end }}
+   </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}

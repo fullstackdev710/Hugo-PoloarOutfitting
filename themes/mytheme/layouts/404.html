@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{- partial "head.html" . -}}
+{{ if or (.Params.math) (.Site.Params.math) }}
+{{- partial "math.html" . -}}
+{{ end }}
+
+<head>
+    {{ partial "header.html" . }}
+</head>
+
+<body>
+    <div id="error-404">
+
+        <div class="heroSection">
+            <div class="">
+                {{- partial "hero.html" . -}}
+            </div>
+        </div>
+        <div id="content">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-12">
+                        <h1 class="text-center ">404</h1>
+                        <p class="text-center">
+                            Unfortunately, the page you tried accessing could not be retrieved. Please visit the
+                            <a href="/">homepage</a>.
+                        </p>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+</body>
+
+</html>

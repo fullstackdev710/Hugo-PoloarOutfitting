@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{- partial "head.html" . -}}
+{{ if or (.Params.math) (.Site.Params.math) }}
+{{- partial "math.html" . -}}
+{{ end }}
+
+<head>
+    {{ partial "header.html" . }}
+</head>
+
+<body>
+    <div id="services-page">
+        {{ partial "breadcrumbs.html" . }}
+        <div id="content">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <section class="contactus">
+                                    <div class="container" id="contactus">
+                                        {{- partial "contact.html" . -}}
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-md-3  offset-1 d-none d-md-block">
+                                <p>
+                                    <strong class="mt-0">Our Services</strong>
+                                </p>
+                                <p>
+                                    Goal Capital understands that every company is different. Different growth stages,
+                                    different
+                                    challenges, different resources. <a href="/services/">Our Services</a>
+                                </p>
+                                <p>
+                                    <strong class="mt-0">Our Clients</strong>
+                                </p>
+                                <p>
+                                    Goal Capital has a diverse range of clients, in multiple industries. We are ready to
+                                    serve
+                                    your needs, with multiple years of experience. <a href="/clients/">Our Clients</a>
+                                </p>
+                                <p>
+                                    <strong class="mt-0">Contact Us</strong>
+                                </p>
+                                <p>
+                                    We look forward to receiving feedback and hearing from investors. <a
+                                        href="/contact/">Contact
+                                        Us</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+name = "Hugo"
+license = "GPL-3.0"
+licenselink = ""
+description = ""
+tags = ["blog", "bootstrap", "clean", "minimal", "personal", "responsive", "resume", "simple"]
+features = ["bootstrap", "responsive", "simple"]
+homepage = ""
+min_version = "0.74.3"
+

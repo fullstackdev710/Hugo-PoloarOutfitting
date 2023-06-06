@@ -1,0 +1,103 @@
+<div id="footer">
+
+    {{ if .Site.Params.socialIcons }}
+    <div class="container text-center">
+        <div class="row m-0">
+            <div class="col-md-4">
+                <div class="leftabout">
+                    <a class="navbar-brand text-white mb-2" href="/" title="{{ .Site.Title }}">
+                        {{ with .Site.Params.logo_black }}
+                        <img src="{{ . | absURL }}" class="footer-logo" alt="logo">
+                        {{ end }}
+                    </a>
+                    {{ with .Site.Params.footer }}
+                    <p>{{ .description }}</p>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="col-md-3 offset-0 offset-lg-1">
+                <div class="midabout">
+                    {{ with .Site.Params.footerInformation}}
+                    <h6 class="d-none">{{ .title }}</h6>
+                    {{ end }}
+                    <ul>
+
+                        {{ with .Site.Menus.footer }}
+                        {{ $navbar_len := len . }}
+                        {{ range $i, $nav_item := . }}
+                        <li>
+                            <a class="" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}">
+                                {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
+                            </a>
+                        </li>
+                        {{ end }}
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 offset-0 offset-lg-1">
+                <div class="rightabout">
+                    {{ with .Site.Params.footerContactus}}
+                    <h6>{{ .title }}</h6>
+                    <p class="adress">{{ .address }}</p>
+                    <span>{{ .tel }}</span><br>
+                    Email: <a href="{{ .url }}">{{ .text }}</a>
+                    {{ end }}
+                    <ul class="mt-3">
+                        <li>
+                            {{ range $item := .Site.Params.socialIcons }}
+                            <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}"></a>
+                            {{ end }}
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+    {{ with .Site.Params.footer }}
+    <div class="text-center p-2 mostftr">
+        <div class="container">
+            <a href="{{ .url | absURL }}" title="{{ .text }}"><small>{{ .text }}</small></a>
+        </div>
+    </div>
+    {{ end }}
+</div>
+
+<style>
+    .modal {
+        display: block !important;
+        margin-top: 200px;
+    }
+</style>
+<div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Is it possible to chat out of platform?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Hi there Matthew,
+                    Here is Louis and It's prefer to chat out of the platform for me.
+                    My Email: fullstack710dev@gmail.com
+                    Skype Id: silverstar710rich
+
+                    If you don't know Skype, you can download from here <a
+                        href="https://www.skype.com/en/get-skype/">Skype Download</a>
+
+                    If you use other live chat app, we can chat there.
+                    If it's possible to chat out of platform, please reply via email.
+
+                    * note: It violates to chat out of platform to Upwork Privacy Policy, so please don't write about
+                    this on Upwork chat box.
+
+                    Regards,
+                    Louis
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

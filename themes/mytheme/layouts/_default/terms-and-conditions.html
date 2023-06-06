@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{- partial "head.html" . -}}
+{{ if or (.Params.math) (.Site.Params.math) }}
+{{- partial "math.html" . -}}
+{{ end }}
+
+<head>
+   {{ partial "header.html" . }}
+</head>
+
+<body>
+   <div id="sitemap">
+      {{ partial "breadcrumbs.html" . }}
+      <div id="content">
+         <div class="container">
+            <div class="row my-5">
+               <div class="col-md-12">
+                  <p>
+                     The contents of this website have been provided for informational purposes only and are not
+                     intended to, nor will they, give rise to any legal rights or obligations between Goal Capital Inc.,
+                     their subsidiaries, affiliates or agents (collectively “Goal Capital”) and any third party. All
+                     information is provided without warranties of any kind. Information may be changed or updated
+                     without notice and may contain technical inaccuracies. Goal Capital assumes no responsibility for
+                     the consequences of any errors or omissions, or liability of any kind arising in connection with
+                     this website. Goal Capital assumes no responsibility for the contents of any sites accessed through
+                     our website links and does not endorse any opinions expressed on such sites. Access is provided for
+                     your convenience only.
+                  </p>
+                  <p>
+                     Information on this website is not intended to provide, nor should it be construed as providing,
+                     financial, tax planning, accounting, investment, business or legal advice in any way. In
+                     particular, nothing in this website is intended to constitute an offering of securities in any
+                     jurisdiction. Information disclosed under applicable securities laws is not in any way modified or
+                     supplemented by the information available through this website. You are advised to consult your own
+                     advisors before taking any action based on the information contained in this website.
+                  </p>
+                  <p>
+                     Certain statements contained in this website are forward-looking and are subject to known and
+                     unknown risks and uncertainties that may cause actual results to differ materially from those
+                     expressed or implied in such forward-looking statements, and should be read in conjunction with the
+                     Fund’s securities filings. Goal Capital assumes no obligation to update or revise any such
+                     forward-looking statements.
+                  </p>
+                  <p>
+                     Goal Capital Inc. owns and retains the copyright in the materials found in this website. No
+                     material found on this website may be reproduced, uploaded or distributed in any way, with the
+                     exception that users may download one copy of the materials on any single computer for their
+                     personal, non-commercial use only, provided all copyright and proprietary notices are kept intact.
+                     All other rights are reserved.
+                  </p>
+                  <p>
+                     Trademarks of Goal Capital Inc. are included in this website. No license is granted with respect to
+                     such materials.
+                  </p>
+                  <p>
+                     Use of this website signifies your agreement to these terms of use.
+                  </p>
+                  <p>
+                     © Goal Capital Inc. 2008
+                  </p>
+               </div>
+            </div>
+            <!-- /.row -->
+
+         </div>
+         <!-- /.container -->
+      </div>
+      <!-- /#content -->
+
+      {{ partial "footer.html" . }}
+
+   </div>
+   <!-- /#all -->
+
+   {{ partial "scripts.html" . }}
+
+</body>
+
+</html>
