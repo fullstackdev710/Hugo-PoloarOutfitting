@@ -52,7 +52,7 @@ logo = "/img/PolarOutfittingLogo-Yellow.png"  # url or path to a logo to put in 
 logo_black = "/img/PolarOutfittingLogo-Black.png"  # url or path to a logo to put in the header
 
 [params.footer]
-text = "©2023 hugo - All rights reserved"
+text = "© Copyright 2023 Polar Outfitting Nunavut"
 url = ""
 description = "Fifth abundantly made Give sixth hath. Cattle creature i be don’t them behold green moved fowl Moved life us beast good yielding. Have bring."
 
@@ -98,35 +98,95 @@ date_format = "Mon, Jan 2, 2006"
 
 # Main menu
 [[menu.main]]
-name       = "Home"
 identifier = "menu.home"
+name       = "Home"
 url        = "/"
 weight     = 1
 
-
 [[menu.main]]
-name       = "About"
 identifier = "menu.about"
-url        = "/about/"
+name       = "About"
+url        = "/about"
 weight     = 2
 
 [[menu.main]]
-name       = "Services"
-identifier = "menu.Services"
-url        = "/gallery/"
+identifier = "menu.packages"
+name       = "Packages"
+url        = "/packages"
 weight     = 3
 
 [[menu.main]]
-name       = "Blog"
-identifier = "menu.blog"
-url        = "/blog/"
+identifier = "menu.packages-fishing"
+name       = "Fishing"
+url        = "/packages/fishing"
+parent     = "menu.packages"
+weight     = 1
+
+[[menu.main]]
+identifier = "menu.packages-snowmobile"
+name       = "SnowMobile"
+url        = "/packages/snowmobile"
+parent     = "menu.packages"
+weight     = 2
+
+[[menu.main]]
+identifier = "menu.packages-boating"
+name       = "Boating"
+url        = "/packages/boating"
+parent     = "menu.packages"
+weight     = 3
+
+[[menu.main]]
+identifier = "menu.packages-logistical"
+name       = "Logistical"
+url        = "/packages/logistical"
+parent     = "menu.packages"
+weight     = 4
+
+[[menu.main]]
+identifier = "menu.packages-cultural-days"
+name       = "Cultural Days"
+url        = "/packages/cultural-days"
+parent     = "menu.packages"
+weight     = 5
+
+[[menu.main]]
+identifier = "menu.packages-groups"
+name       = "Groups"
+url        = "/packages/groups"
+parent     = "menu.packages"
+weight     = 6
+
+[[menu.main]]
+name       = "Gallery"
+identifier = "menu.gallery"
+url        = "/gallery"
 weight     = 4
 
 [[menu.main]]
 identifier = "contact"
 name       = "Contact"
-url        = "/contact/"
+url        = "/contact"
 weight     = 5
+
+
+[[menu.footer]]
+identifier = "menu.privacy-policy"
+name       = "Privacy Policy"
+url        = "/privacy-policy"
+weight     = 1
+
+[[menu.footer]]
+identifier = "menu.terms-and-conditions"
+name       = "Terms & Conditions"
+url        = "/terms-and-conditions"
+weight     = 2
+
+[[menu.footer]]
+identifier = "menu.contact"
+name       = "Contact"
+url        = "/contact"
+weight     = 3
 
 
 [params.heros]
