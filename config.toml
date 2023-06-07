@@ -1,6 +1,6 @@
 baseURL = ""
-title = "POLAR OUTFITTING"
-theme = "mytheme"
+title = "LOGO"
+theme = "flewidity"
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 math = false          # 
@@ -16,6 +16,8 @@ defaultContentLanguage = "en"
     latitude = "-12.043333"
     longitude = "-77.028333"
     
+
+
 
 # - register your account to https://formspree.io/register
     # - login and create new form
@@ -35,6 +37,7 @@ contact_form_ajax = true
     formspreekey = "xvonddbb"
 
 
+
 # number of words of summarized post content (default 70)
 summaryLength = 70
 
@@ -44,38 +47,23 @@ paginate = 10
 [params]
 author = ""
 description = ""
-favicon = "/img/favico.png"  # path to a .ico to use as favicon
-logo = "/img/PolarOutfittingLogo-Yellow.png"  # url or path to a logo to put in the header
-logo_black = "/img/PolarOutfittingLogo-Black.png"  # url or path to a logo to put in the header
-
-[params.hero]
-hero_text = "Progressive Investor Relations & Consulting"
-hero_text_color = "#fff"
-hero_text_dropshadow = true
-hero_text_dropshadow_color = "#000000"
-hero_text_dropshadow_amount = "2px 7px 16px"
-hero_button_text = "Click Here"
-hero_button_color = "#fff"
-hero_button_bg_color = "#3c3c3c"
-hero_button_hover_color = "#fff"
-hero_button_bg_hover_color = "#A12307"
-hero_button_link = "/about"
-hero_button = true
+favicon = "favicon.ico"  # path to a .ico to use as favicon
+logo = ""  # url or path to a logo to put in the header
 
 [params.footer]
-text = "© Copyright 2023 Polar Outfitting Nunavut"
+text = "©2023 hugo - All rights reserved"
 url = ""
-description = ""
+description = "Fifth abundantly made Give sixth hath. Cattle creature i be don’t them behold green moved fowl Moved life us beast good yielding. Have bring."
 
 [params.footerInformation]
 title = "More Information"
 
 [params.footerContactus]
 title = "Contact"
-address = ""
-tel = "Tel: +1 949-305-5093"
-url = "mailto:contact@goalcapital.net"
-text = "contact@goalcapital.net"
+address = "Adress: 6-XXX City Road OTTAWA, ONTARIO K2L 1T9 CANADA"
+tel = "Tel: +1 987-654-3210"
+url = "mailto:contact@us.ca"
+text = "contact@us.ca"
 
 
 [[params.socialIcons]]
@@ -109,95 +97,36 @@ date_format = "Mon, Jan 2, 2006"
 
 # Main menu
 [[menu.main]]
-identifier = "menu.home"
 name       = "Home"
+identifier = "menu.home"
 url        = "/"
 weight     = 1
 
+
 [[menu.main]]
-identifier = "menu.about"
 name       = "About"
-url        = "/about"
+identifier = "menu.about"
+url        = "/about/"
 weight     = 2
 
 [[menu.main]]
-identifier = "menu.packages"
-name       = "Packages"
-url        = "/packages"
+name       = "Services"
+identifier = "menu.Services"
+url        = "/gallery/"
 weight     = 3
 
 [[menu.main]]
-identifier = "menu.packages-fishing"
-name       = "Fishing"
-url        = "/packages/fishing"
-parent     = "menu.packages"
-weight     = 1
-
-[[menu.main]]
-identifier = "menu.packages-snowmobile"
-name       = "SnowMobile"
-url        = "/packages/snowmobile"
-parent     = "menu.packages"
-weight     = 2
-
-[[menu.main]]
-identifier = "menu.packages-boating"
-name       = "Boating"
-url        = "/packages/boating"
-parent     = "menu.packages"
-weight     = 3
-
-[[menu.main]]
-identifier = "menu.packages-logistical"
-name       = "Logistical"
-url        = "/packages/logistical"
-parent     = "menu.packages"
-weight     = 4
-
-[[menu.main]]
-identifier = "menu.packages-cultural-days"
-name       = "Cultural Days"
-url        = "/packages/cultural-days"
-parent     = "menu.packages"
-weight     = 5
-
-[[menu.main]]
-identifier = "menu.packages-groups"
-name       = "Groups"
-url        = "/packages/groups"
-parent     = "menu.packages"
-weight     = 6
-
-[[menu.main]]
-name       = "Gallery"
-identifier = "menu.gallery"
-url        = "/gallery"
+name       = "Blog"
+identifier = "menu.blog"
+url        = "/blog/"
 weight     = 4
 
 [[menu.main]]
 identifier = "contact"
 name       = "Contact"
-url        = "/contact"
+url        = "/contact/"
 weight     = 5
 
-
-[[menu.footer]]
-identifier = "menu.privacy-policy"
-name       = "Privacy Policy"
-url        = "/privacy-policy"
-weight     = 1
-
-[[menu.footer]]
-identifier = "menu.terms-and-conditions"
-name       = "Terms & Conditions"
-url        = "/terms-and-conditions"
-weight     = 2
-
-[[menu.footer]]
-identifier = "menu.contact"
-name       = "Contact"
-url        = "/contact"
-weight     = 3
 
 [params.heros]
 enable = true
@@ -222,12 +151,6 @@ name = "Contact Us"
 url = "#contact"
 pre = "Contact Us"
 
-[params.clients]
-enable = true
-title = "Our Clients"
-subtitle = "Polar Outfitting Nunavut has worked with many publicly traded companies since its inception in 2007 including NYSE, NASDAQ, TSX ,TSX.V, OCT-Markets, and CSE listed clients. Please see some of Goal Capital past and present clients."
-cols = 3 # Default: 3, Available values 2,3,4,6
-
 [params.features]
 enable = true
 title = "What We Do"
@@ -242,10 +165,6 @@ subtitle = "Where to Buy Lorum spum text business of being in the business."
 [params.howtouse]
 enable = true
 title = "How to Use" 
-
-[params.home-content]
-enable = true
-title = "Home Content" 
 
 [params.contact]
 enable = true
@@ -270,6 +189,3 @@ search = true
 
 [markup.goldmark.renderer]
 unsafe = true  # allow raw HTML in markdown files
-
-[build]
-  writeStats = true

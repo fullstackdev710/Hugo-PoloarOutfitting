@@ -1,21 +1,19 @@
 :root {
-    --primary-accent: #3c3c3c !important;
-    --highlight-color: #ec651b !important;
-    --red-color: #A12307 !important;
-    --navbar-border-top: #3c3c3c !important;
-    --button-border: #3c3c3c !important;
-    --link-focus: #3c3c3c !important;
-    --form-shadow: rgba(60, 60, 60, 0.6) !important;
-    --pagination-bg: #3c3c3c !important;
-    --link-hover-bg: #3c3c3c !important;
-    --navbar-focus: #3c3c3c !important;
+    --primary-accent: #54a7ef !important;
+    --navbar-border-top: #54a7ef !important;
+    --button-border: #54a7ef !important;
+    --link-focus: #54a7ef !important;
+    --form-shadow: rgba(56, 167, 187, 0.6) !important;
+    --pagination-bg: #54a7ef !important;
+    --link-hover-bg: #54a7ef !important;
+    --navbar-focus: #54a7ef !important;
     --bs-body-font-size: 14px;
   }
 body{
     font-size: var(--bs-body-font-size);
 }
 a {
-  color: var(--highlight-color);
+  color: var(--primary-accent);
   text-decoration: none;
 }
 // Sizes
@@ -26,7 +24,7 @@ $avatar-size: {{ .Param "style.avatarSize" | default "90px;" }};
 $black: {{ .Param "style.colorBlack" | default "#222222" }};
 $red: {{ .Param "style.colorRed" | default "#dc3545" }};
 
-$headerCustom:#fff0;
+$headerCustom:#fff;
 
 // Font
 $font-family: {{ .Param "style.fontFamily" | default "Roboto" }};
@@ -180,10 +178,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .menuHead{
   background:$headerCustom;   
-  padding: 20px 0;
-  position: absolute;
-  width: 100%;
-  z-index: 9999;
+  padding: 20px 0;   
 }
 #footer {
     a {

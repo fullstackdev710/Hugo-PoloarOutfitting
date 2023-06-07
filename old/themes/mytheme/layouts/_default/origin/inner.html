@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{- partial "head.html" . -}}
+    {{ if or (.Params.math) (.Site.Params.math) }}
+        {{- partial "math.html" . -}}
+    {{ end }}
+  <head>
+    {{ partial "header.html" . }}  
+   
+  </head>
+
+  <body>
+<div id="all">  
+    {{ partial "breadcrumbs.html" . }}
+ 
+<div class="container" id="about">
+    <div class="row">
+        <div class="col-md-7">           
+                {{ .Content }}
+        </div>
+        <div class="col-md-5">           
+            <img src="../img/aboutus.jpg" style="width:100%"> 
+    </div>
+   
+    </div>
+</div>
+
+{{- partial "footer.html" . -}}
+</div>
+</body>
+</html>

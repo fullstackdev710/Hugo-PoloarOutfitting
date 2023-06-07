@@ -1,0 +1,24 @@
+<div class="container" id="wheretobuy">
+    <div class="row">
+        <div class="heading text-center">
+            <h2>{{ .Site.Params.WheretoBuy.title }}</h2>
+            
+        </div>                        
+                <div class="row align-items-center">
+                    {{ range .Site.Data.wheretobuy }}   
+
+                     <div class="col-md-5">
+                      <img src="{{ .image }}" style="width:100%" alt="{{.alt}}">
+                     </div>
+                     <div class="col-md-6">
+                      <h2>{{ .title | safeHTML }}</h2> 
+                      <p>{{ .description | safeHTML }}</p>
+                      <a class="btn-default2" href="{{.url | safeHTML }}">{{.buttontext | safeHTML }}</a>
+                     </div>
+                      
+                    {{ end }}
+                </div>
+    </div>
+    <!-- /.row -->
+</div>
+

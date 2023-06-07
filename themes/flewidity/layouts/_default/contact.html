@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{- partial "head.html" . -}}
+    {{ if or (.Params.math) (.Site.Params.math) }}
+        {{- partial "math.html" . -}}
+    {{ end }}
+  <head>
+    {{ partial "header.html" . }}
+    
+   
+  </head>
+
+  <body>
+    {{ partial "breadcrumbs.html" . }}
+<div class="container">
+
+    
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <section class="m-0">
+
+                {{ .Content }}
+
+                
+
+                {{ if isset .Site.Params "formspree_action" }}
+
+                <div class="heading">
+                  <h3>{{ i18n "contactForm" }}</h3>
+                </div>
+
+                <div id="contact-message"></div>
+
+                <form {{ with .Site.Params.contact_form_ajax }}class="contact-form-ajax"{{ else }}{{ end }} method="post" action="{{ .Site.Params.formspree_action }}">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                              <label for="name">{{ i18n "contactName" }}</label>
+                                <input type="text" class="form-control" name="name" id="name" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="email">{{ i18n "contactMail" }}</label>
+                                <input type="email" autocomplete="email" class="form-control" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="message">{{ i18n "contactMessage" }}</label>
+                                <textarea id="message" class="form-control" name="message" required></textarea>
+                            </div>
+                        </div>
+                        {{ if and .Site.Params.enableRecaptchaInContactForm .Site.Params.googleRecaptchaKey }}
+                        <div class="col-sm-12">
+                            <div class="g-recaptcha" data-sitekey="{{ .Site.Params.googleRecaptchaKey }}"></div>
+                            <br/>
+                        </div>
+                        {{ end }}
+
+                        <div class="col-sm-12 text-center">
+                          <button type="submit" class="btn btn-template-main"><i class="far fa-envelope"></i>{{ i18n "contactSend" }}</button>
+
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </form>
+
+                {{ end }}
+
+            </section>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="rightaboutCont">
+                {{ with .Site.Params.footerContactus}}
+                    <h6>{{ .title }}</h6>
+                    <p class="adress">{{ .address }}</p>
+                    <span>{{ .tel }}</span><br>
+                    <a href="{{ .url }}" >{{ .text }}</a>
+                 {{ end }} 
+
+                 <ul class="mt-3">
+                    <li>
+                {{ range $item := .Site.Params.socialIcons }}
+                <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}"></a>
+                {{ end }}
+                </li>
+                </ul>
+            </div>    
+        </div>
+       
+    </div>
+    <!-- /.row -->
+</div>
+
+<div class="mt-5">
+    {{- partial "map.html" . -}}
+</div>
+
+{{- partial "footer.html" . -}}
+</div>
+<script src="/static/js/front.js"></script>
+</body>
+</html>
