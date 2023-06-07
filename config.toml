@@ -1,6 +1,6 @@
 baseURL = ""
 title = "LOGO"
-theme = "flewidity"
+theme = "polar-outfitting-nunavut"
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 math = false          # 
@@ -47,8 +47,9 @@ paginate = 10
 [params]
 author = ""
 description = ""
-favicon = "favicon.ico"  # path to a .ico to use as favicon
-logo = ""  # url or path to a logo to put in the header
+favicon = "/img/favico.png"  # path to a .ico to use as favicon
+logo = "/img/PolarOutfittingLogo-Yellow.png"  # url or path to a logo to put in the header
+logo_black = "/img/PolarOutfittingLogo-Black.png"  # url or path to a logo to put in the header
 
 [params.footer]
 text = "©2023 hugo - All rights reserved"
