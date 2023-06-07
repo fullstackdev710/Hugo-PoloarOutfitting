@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Params.lang }}">
-    {{- partial "head.html" . -}}
-    {{ if or (.Params.math) (.Site.Params.math) }}
-        {{- partial "math.html" . -}}
-    {{ end }}
-    <body id="backtop">
-           {{- partial "header.html" . -}}             
+{{- partial "head.html" . -}}
+{{ if or (.Params.math) (.Site.Params.math) }}
+{{- partial "math.html" . -}}
+{{ end }}
+
+<body id="backtop">
+    {{- partial "header.html" . -}}
+    <div class="main">
         <div class="heroSection">
             <div class="">
-                {{- partial "hero.html" . -}}
+                {{- partial "hero-video.html" . -}}
             </div>
         </div>
         <section class="featureSection">
@@ -21,24 +23,25 @@
             <div class="container" id="where-to-buy">
                 {{- partial "wheretobuy.html" . -}}
             </div>
-        </section>      
+        </section>
         <section class="howtouse">
             <div class="container" id="how-to-use">
-                {{- partial "howtouse.html" . -}}                
+                {{- partial "howtouse.html" . -}}
             </div>
-        </section> 
+        </section>
 
         <section class="contactus">
             <div class="container" id="contactus">
-                {{- partial "contact.html" . -}}   
-                             
+                {{- partial "contact.html" . -}}
+
             </div>
-        </section> 
-        
-       
-        {{- partial "footer.html" . -}}
+        </section>
+
+    </div>
+    {{- partial "footer.html" . -}}
 
 
-        {{ partial "scripts.html" . }}
-    </body>
+    {{ partial "scripts.html" . }}
+</body>
+
 </html>

@@ -24,7 +24,7 @@ $avatar-size: {{ .Param "style.avatarSize" | default "90px;" }};
 $black: {{ .Param "style.colorBlack" | default "#222222" }};
 $red: {{ .Param "style.colorRed" | default "#dc3545" }};
 
-$headerCustom:#fff;
+$headerCustom:#fff0;
 
 // Font
 $font-family: {{ .Param "style.fontFamily" | default "Roboto" }};
@@ -178,7 +178,10 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .menuHead{
   background:$headerCustom;   
-  padding: 20px 0;   
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
 }
 #footer {
     a {
