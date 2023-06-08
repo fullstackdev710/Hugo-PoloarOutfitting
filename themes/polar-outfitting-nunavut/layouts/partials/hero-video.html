@@ -2,6 +2,7 @@
    .heroSection {
       position: relative;
       height: 100vh;
+      overflow: hidden;
    }
 
    .home-video-hero {
@@ -16,8 +17,8 @@
       clear: both;
       width: 100vw;
       position: relative;
-      left: 50%;
-      right: 50%;
+      left: 50vw;
+      right: 50vw;
       margin-left: -50vw;
       margin-right: -50vw;
    }
@@ -46,7 +47,13 @@
       background-color: rgba(19, 46, 83, 0.3);
       position: relative;
    }
+
+   .hero-title {
+      font-size: 3.6rem;
+      text-transform: uppercase;
+   }
 </style>
+
 <section class="m-0">
    <div class="home-video-hero">
       <div class="main-video">
@@ -61,7 +68,7 @@
                <div class="row text-center">
                   <div class="col-xs-12">
                      {{if .Site.Params.hero.hero_text_dropshadow }}
-                     <h1 class="mb-3"
+                     <h1 class="mb-3 hero-title"
                         style="color: {{ .Site.Params.hero.hero_text_color }};  text-shadow: {{ .Site.Params.hero.hero_text_dropshadow_amount }} {{ .Site.Params.hero.hero_text_dropshadow_color }}; ">
                         {{
                         .Site.Params.hero.hero_text }}</h1>
@@ -73,8 +80,8 @@
                      <h4 class="mb-3 d-none">{{ .Site.Params.heros.subtitle }}</h4>
                      <div class="btnsectHero">
                         {{ if .Site.Params.hero.hero_button }}
-                        <a class="btn-default hero-btn" style="color: {{ .Site.Params.hero.hero_button_color }}; background-color: {{ .Site.Params.hero.hero_button_bg_color }}; --hover-color: {{ .Site.Params.hero.hero_button_hover_color }};
-                                      --hover-background-color: {{ .Site.Params.hero.hero_button_bg_hover_color }};"
+                        <a class="btn-default hero-btn"
+                           style="color: {{ .Site.Params.hero.hero_button_color }}; background-color: {{ .Site.Params.hero.hero_button_bg_color }};"
                            href=" {{ .Site.Params.hero.hero_button_link | safeURL }}">{{
                            .Site.Params.hero.hero_button_text }}
                         </a>

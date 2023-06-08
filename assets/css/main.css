@@ -2,9 +2,6 @@
 .footer-logo {
   max-width: 200px;
 }
-p {
-  font-size: 1rem;
-}
 .main {
   min-height: calc(100vh - 340px);
 }
@@ -1010,143 +1007,8 @@ ul.lgrp p {
   font-weight: 400;
 }
 
-.btn-default {
-  background: #fff;
-  color: #000;
-  display: inline-block;
-  letter-spacing: 1px;
-  padding: 14px 35px;
-  text-transform: uppercase;
-  border-radius: 0;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  font-size: 20px;
-  border-radius: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-decoration: none;
-}
-
-.btn-default:hover {
-  background: var(--primary-accent);
-  color: #fff;
-}
-
-.btn-default2 {
-  background: var(--primary-accent);
-  color: #fff;
-  display: inline-block;
-  letter-spacing: 1px;
-  padding: 14px 35px;
-  text-transform: uppercase;
-  border-radius: 0;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  font-size: 20px;
-  border-radius: 5px;
-  margin-top: 20px;
-  text-decoration: none;
-}
-
-.btn-default2:hover {
-  background: var(--primary-accent);
-  color: #fff;
-}
-
 .btnsectHero {
   margin-top: 50px;
-}
-
-.box-simple {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.box-simple .icon {
-  color: var(--primary-accent);
-  border-color: var(--primary-accent);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-.box-simple h3 {
-  font-weight: normal;
-  font-size: 18px;
-  text-transform: uppercase;
-  line-height: 1.5;
-  color: #555555;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-}
-
-.box-simple h3 a {
-  color: #555555;
-}
-
-.box-simple p {
-  color: #999999;
-}
-
-.box-simple:hover .icon {
-  -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-}
-
-.box-simple:hover .icon i {
-  -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -o-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-
-.box-simple.box-white {
-  padding: 20px;
-  border: dotted 1px #999999;
-}
-
-.box-simple.box-white .icon {
-  color: #555555;
-  border-color: transparent;
-  font-size: 70px;
-}
-
-.box-simple.box-dark {
-  padding: 20px;
-  border: dotted 1px #999999;
-  background: #555555;
-  color: #fff;
-}
-
-.box-simple.box-dark .icon {
-  color: #f7f7f7;
-  border-color: transparent;
-  font-size: 70px;
-}
-
-.box-simple.box-dark h3 {
-  color: #fff;
-}
-
-.box-simple.box-dark h3 a {
-  color: #fff;
-}
-
-.box-simple.box-dark p {
-  color: #fff;
-}
-
-.box-simple a {
-  colors: var(--primary-accent);
-  text-decoration: none;
 }
 
 .box-image {
@@ -1462,13 +1324,6 @@ section.contactus {
   background: #ebebebd1;
   margin: 0 0;
   padding: 20px 0 70px 0;
-}
-.backtotop a {
-  color: #fff;
-  background: #6aadf0;
-  padding: 6px 12px;
-  border-radius: 2px;
-  z-index: 1;
 }
 .backtotop {
   position: fixed;

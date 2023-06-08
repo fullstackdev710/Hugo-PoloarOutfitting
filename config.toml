@@ -189,10 +189,18 @@ url        = "/contact"
 weight     = 3
 
 
-[params.heros]
+[params.hero]
 enable = true
-title = "Heading"
-subtitle = "Subheading"
+hero_text = "Progressive Investor Relations & Consulting"
+hero_text_color = "#FFB600"
+hero_text_dropshadow = true
+hero_text_dropshadow_color = "#6AADF0"
+hero_text_dropshadow_amount = "2px 7px 16px"
+hero_button = true
+hero_button_text = "Click Here"
+hero_button_color = "#6AADF0"
+hero_button_bg_color = "#FFB600"
+hero_button_link = "/about"
 
 [[menu.herobar]]
 weight = 1
@@ -212,9 +220,9 @@ name = "Contact Us"
 url = "#contact"
 pre = "Contact Us"
 
-[params.features]
+[params.packages]
 enable = true
-title = "What We Do"
+title = "Packages"
 subtitle = "Get out of the business of being in the business."
 cols = 3 # Default: 3, Available values 2,3,4,6
 
