@@ -708,7 +708,7 @@ div#footer {
 }
 
 .mostftr {
-  border-top: solid 1px;
+  border-top: solid 1px #fff;
   padding: 20px 0 !important;
   margin-top: 20px;
 }
