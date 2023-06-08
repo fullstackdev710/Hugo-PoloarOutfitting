@@ -31,6 +31,7 @@
             <div class="col-md-4">
                 <div class="box-simple" {{ with $element.backgroundImg }}
                     style="background-image: url( {{ $element.backgroundImg }});" {{ end }}>
+                    <div class="bg-overlay" style="background-color: rgba(0, 0, 0, 0.5)"></div>
                     {{ with $element.url }}
                     <a href="{{ $element.url }}">
                         {{ end }}
