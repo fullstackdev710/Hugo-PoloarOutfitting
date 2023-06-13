@@ -37,3 +37,4 @@ other = "{{ .Count }} Words"
 
 [lastModified]
 other = "Last updated"
+

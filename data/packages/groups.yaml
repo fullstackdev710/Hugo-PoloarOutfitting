@@ -1,6 +1,6 @@
 weight: 1
 name: "Groups"
 icon: "fas fa-desktop"
-backgroundImg: "img/packages/default.webp"
-url: "#"
+backgroundImg: "/img/packages/package-groups-featured.webp"
+url: "/packages/groups"
 description: "Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring."

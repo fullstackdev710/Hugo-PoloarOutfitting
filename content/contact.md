@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+bgImg: "/img/contactform-bg.webp"
 layout: contact
 ---
 

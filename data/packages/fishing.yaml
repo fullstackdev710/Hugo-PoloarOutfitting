@@ -1,6 +1,6 @@
 weight: 4
 name: "Fishing"
 icon: "fas fa-lightbulb"
-backgroundImg: "img/packages/default.webp"
-url: "#"
+backgroundImg: "/img/packages/package-fishing-featured.webp"
+url: "/packages/fishing"
 description: "Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring."

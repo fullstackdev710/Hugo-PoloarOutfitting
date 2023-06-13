@@ -276,7 +276,6 @@ h1, .h1, h2, .h2, h3, .h3 {
   text-align: center;
   margin-bottom: 40px;
   position: relative;
-  cursor: pointer;
   background: {
     size: cover;
     position: center;
@@ -371,4 +370,13 @@ h1, .h1, h2, .h2, h3, .h3 {
       colors: var(--primary-accent);
       text-decoration: none;
     }
+  }
+
+  #heading-breadcrumbs {
+   .bg-overlay {
+      background-color: var(--blue-transparent);
+   }
+   * {
+      position: relative;
+   }
   }

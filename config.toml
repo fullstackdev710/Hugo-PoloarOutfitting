@@ -50,6 +50,8 @@ description = ""
 favicon = "/img/favico.png"  # path to a .ico to use as favicon
 logo = "/img/PolarOutfittingLogo-Yellow.png"  # url or path to a logo to put in the header
 logo_black = "/img/PolarOutfittingLogo-Black.png"  # url or path to a logo to put in the header
+formspree_action = "https://formspree.io/sample/of/endpoint"
+contact_form_ajax = true
 
 [params.footer]
 text = "© Copyright 2023 Polar Outfitting Nunavut"
@@ -123,9 +125,9 @@ parent     = "menu.packages"
 weight     = 1
 
 [[menu.main]]
-identifier = "menu.packages-snowmobile"
+identifier = "menu.packages-snow-mobile"
 name       = "SnowMobile"
-url        = "/packages/snowmobile"
+url        = "/packages/snow-mobile"
 parent     = "menu.packages"
 weight     = 2
 

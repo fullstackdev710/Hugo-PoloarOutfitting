@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{- partial "head.html" . -}}
+{{ if or (.Params.math) (.Site.Params.math) }}
+{{- partial "math.html" . -}}
+{{ end }}
+
+<head>
+   {{ partial "header.html" . }}
+</head>
+
+<body>
+   <div id="all">
+      {{ partial "breadcrumbs.html" . }}
+
+      <div class="container main" id="about">
+
+         <section class="packageSection">
+            <div class="container" id="aboutus">
+               <div class="backtotop"><a href="#backtop"><i class="fa fa-chevron-up"></i></a></div>
+               {{- partial "packages.html" . -}}
+            </div>
+         </section>
+
+         <div class="row mb-5">
+            <div class="col-12">
+               <img src="/img/packages/default.webp" style="width:100%">
+            </div>
+            <div class="col-12">
+               {{ .Content }}
+            </div>
+         </div>
+
+         {{- partial "schema.html" . -}}
+      </div>
+      <div class="backtotop"><a href="#backtop"><i class="fa fa-chevron-up"></i></a></div>
+      {{- partial "footer.html" . -}}
+   </div>
+</body>
+
+</html>

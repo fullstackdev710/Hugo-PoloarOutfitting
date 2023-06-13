@@ -1,8 +1,13 @@
-<div id="heading-breadcrumbs">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>{{ .Title }}</h1>
+<div id="heading-breadcrumbs" style="background-image: url({{ .Params.bgImg }});">
+    <div class="bg-overlay"></div>
+    <div class="vert-wrapper">
+        <div class="vert-cell">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="banner-title text-center">{{ .Title }}</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

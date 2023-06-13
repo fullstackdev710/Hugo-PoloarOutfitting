@@ -9,10 +9,12 @@ a.nav-item.nav-link {
   text-transform: uppercase;
 }
 #heading-breadcrumbs {
-  background: url("../img/blue-smooth-wall-textured-background.jpg") center
-    center repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
   padding: 20px 0;
   margin-bottom: 40px;
+  height: 500px;
 }
 #heading-breadcrumbs.no-mb {
   margin-bottom: 0;
@@ -20,7 +22,7 @@ a.nav-item.nav-link {
 #heading-breadcrumbs h1 {
   color: #fff;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 3.2rem;
   font-weight: 700;
   letter-spacing: 0.08em;
 }
@@ -633,7 +635,7 @@ div#footer {
   height: 500px;
 }
 .bg-overlay {
-  position: absolute;
+  position: absolute !important;
   left: 0px;
   top: 0px;
   width: 100%;
