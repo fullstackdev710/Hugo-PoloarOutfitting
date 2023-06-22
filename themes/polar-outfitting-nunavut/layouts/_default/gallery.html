@@ -7,6 +7,21 @@
 
 <head>
    {{ partial "header.html" . }}
+
+   <style>
+      @media (max-width: 767px) {
+
+         .carousel-item.active .ratio,
+         .ratio-16x9 {
+            --bs-aspect-ratio: unset !important;
+         }
+
+         .carousel-item.active img {
+            max-height: unset !important;
+            position: relative;
+         }
+      }
+   </style>
 </head>
 
 <body>
@@ -30,19 +45,20 @@
                </div>
             </div>
          </section>
-
-         <section class="areuready">
-            <div class="container" id="areuready">
-               {{- partial "ready.html" . -}}
-            </div>
-         </section>
       </div>
+
+      <section class="areuready">
+         <div class="container" id="areuready">
+            {{- partial "ready.html" . -}}
+         </div>
+      </section>
       <div class="backtotop"><a href="#backtop"><i class="fa fa-chevron-up"></i></a></div>
       {{- partial "footer.html" . -}}
    </div>
 
    <script src="/libs/masonry_4.2.2.pkgd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="/libs/bs5_image_gallery_lightbox.bundle.min.js"></script>
+
 </body>
 
 </html>
