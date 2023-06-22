@@ -2,6 +2,9 @@
 .footer-logo {
   max-width: 200px;
 }
+.footer-logo {
+  padding-bottom: 10px;
+}
 .main {
   min-height: calc(100vh - 340px);
 }
@@ -107,6 +110,15 @@ a.nav-item.nav-link {
 
   .navbar-collapse {
     background-color: #fff;
+    border-radius: 3px;
+  }
+
+  a.nav-item.nav-link {
+    color: #000 !important;
+  }
+
+  .backtotop {
+    bottom: 20px !important;
   }
 
   span.nav-item.navbar-text {
@@ -555,7 +567,7 @@ div#footer {
   background-image: url(../img/footer-bg.webp);
   background-size: cover;
   background-position: center;
-  padding: 40px 0;
+  padding: 40px 0 0;
 }
 
 .leftabout,

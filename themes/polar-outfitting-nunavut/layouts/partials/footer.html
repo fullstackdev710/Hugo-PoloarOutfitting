@@ -18,11 +18,10 @@
          <div class="col-md-3 offset-0 offset-lg-1">
             <div class="midabout">
                {{ with .Site.Params.footerInformation}}
-               <h6 class="d-none">{{ .title }}</h6>
+               <h6>{{ .title }}</h6>
                {{ end }}
                <ul>
-
-                  {{ with .Site.Menus.footer }}
+                  {{ with .Site.Menus.main }}
                   {{ $navbar_len := len . }}
                   {{ range $i, $nav_item := . }}
                   <li>
@@ -50,17 +49,31 @@
                      {{ end }}
                   </li>
                </ul>
-
             </div>
          </div>
       </div>
    </div>
    {{ end }}
-   {{ with .Site.Params.footer }}
    <div class="text-center p-2 mostftr">
-      <div class="container">
-         <a href="{{ .url | absURL }}" title="{{ .text }}"><small>{{ .text }}</small></a>
+      <div class="container d-block d-md-flex justify-content-center justify-content-md-between">
+         {{ with .Site.Params.footer }}
+         <div>
+            <a href="{{ .url | absURL }}" title="{{ .text }}"><small>{{ .text }}</small></a>
+         </div>
+         {{ end }}
+
+         {{ with .Site.Menus.footer }}
+         <div class="d-flex justify-content-center gap-3">
+            {{ $navbar_len := len . }}
+            {{ range $i, $nav_item := . }}
+            <a class="text-decoration-underline text-white" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}">
+               <small class="text-white">
+                  {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
+               </small>
+            </a>
+            {{ end }}
+         </div>
+         {{ end }}
       </div>
    </div>
-   {{ end }}
 </div>

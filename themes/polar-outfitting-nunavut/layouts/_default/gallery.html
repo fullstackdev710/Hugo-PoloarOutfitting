@@ -31,14 +31,11 @@
             </div>
          </section>
 
-         <div class="row">
-            <div class="col-md-7">
-               {{ .Content }}
+         <section class="areuready">
+            <div class="container" id="areuready">
+               {{- partial "ready.html" . -}}
             </div>
-            <div class="col-md-5">
-               <img src="../img/default.webp" style="width:100%">
-            </div>
-         </div>
+         </section>
       </div>
       <div class="backtotop"><a href="#backtop"><i class="fa fa-chevron-up"></i></a></div>
       {{- partial "footer.html" . -}}

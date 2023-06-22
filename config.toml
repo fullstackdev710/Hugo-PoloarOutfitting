@@ -59,7 +59,7 @@ url = ""
 description = "Fifth abundantly made Give sixth hath. Cattle creature i be don’t them behold green moved fowl Moved life us beast good yielding. Have bring."
 
 [params.footerInformation]
-title = "More Information"
+title = "Site Map"
 
 [params.footerContactus]
 title = "Contact"
@@ -186,8 +186,8 @@ weight     = 2
 
 [[menu.footer]]
 identifier = "menu.contact"
-name       = "Contact"
-url        = "/contact"
+name       = "Cookie Policy"
+url        = "/cookie-policy"
 weight     = 3
 
 
