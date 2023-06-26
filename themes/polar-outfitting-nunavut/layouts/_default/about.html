@@ -9,8 +9,8 @@
    {{ partial "header.html" . }}
 </head>
 
-<body>
-   <div id="all">
+<body id="backtop">
+   <div class="main">
       {{ partial "breadcrumbs.html" . }}
 
       <div class="container" id="about">
@@ -30,8 +30,8 @@
          </div>
       </section>
       <div class="backtotop"><a href="#backtop"><i class="fa fa-chevron-up"></i></a></div>
-      {{- partial "footer.html" . -}}
    </div>
+   {{- partial "footer.html" . -}}
 </body>
 
 </html>

@@ -9,26 +9,29 @@
    {{ partial "header.html" . }}
 </head>
 
-<body>
-   {{ partial "breadcrumbs.html" . }}
-   <div class="container">
-      {{ if isset .Site.Params "formspree_action" }}
+<body id="backtop">
+   <div class="main">
+      {{ partial "breadcrumbs.html" . }}
+      <div class="container">
+         {{ if isset .Site.Params "formspree_action" }}
 
-      <div class="heading">
-         <h3>{{ i18n "contactForm" }}</h3>
+         <div class="heading">
+            <h3>{{ i18n "contactForm" }}</h3>
+         </div>
+
+         <div id="contact-message"></div>
+
+         {{- partial "contact.html" . -}}
+
+         {{ end }}
       </div>
 
-      <div id="contact-message"></div>
-
-      {{- partial "contact.html" . -}}
-
-      {{ end }}
+      <div class="mt-5">
+         {{- partial "map.html" . -}}
+      </div>
    </div>
 
-   <div class="mt-5">
-      {{- partial "map.html" . -}}
-   </div>
-
+   <div class="backtotop"><a href="#backtop"><i class="fa fa-chevron-up"></i></a></div>
    {{- partial "footer.html" . -}}
    </div>
    <script src="/static/js/front.js"></script>
