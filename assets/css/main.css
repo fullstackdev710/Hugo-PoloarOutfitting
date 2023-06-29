@@ -6,7 +6,7 @@
   padding-bottom: 10px;
 }
 .main {
-  min-height: calc(100vh - 421px);
+  min-height: calc(100vh - 384px);
 }
 a.nav-item.nav-link {
   text-transform: uppercase;
@@ -564,7 +564,6 @@ div#footer {
   background-size: cover;
   background-position: center;
   padding: 40px 0 0;
-  height: 380px;
   box-sizing: unset;
 }
 
