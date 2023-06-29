@@ -565,6 +565,7 @@ div#footer {
   background-position: center;
   padding: 40px 0 0;
   height: 380px;
+  box-sizing: unset;
 }
 
 .leftabout,
