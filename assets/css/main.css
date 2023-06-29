@@ -118,7 +118,8 @@ a.nav-item.nav-link {
   }
 
   .backtotop {
-    bottom: 20px !important;
+    bottom: 40px !important;
+    right: 40px !important;
   }
 
   span.nav-item.navbar-text {
@@ -1348,8 +1349,8 @@ section.contactus {
 }
 .backtotop {
   position: fixed;
-  bottom: 90px;
-  right: 30px;
+  bottom: 50px;
+  right: 50px;
 }
 .home-hero {
   position: relative;
