@@ -1,5 +1,6 @@
 ---
 title: "About"
+parentTitle: "Packages"
 bgImg: "/img/about-bg.webp"
 layout: about
 ---

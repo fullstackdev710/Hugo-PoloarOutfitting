@@ -33,7 +33,7 @@
                     style="background-image: url( {{ $element.backgroundImg }});" {{ end }}>
                     <div class="bg-overlay" style="background-color: rgba(0, 0, 0, 0.5)"></div>
                     {{ with $element.url }}
-                    <a href="{{ $element.url }}">
+                    <a href="{{ $element.url }}" aria-label="{{ $element.name }}">
                         {{ end }}
                         <div class="icon">
                             <i class="{{ $element.icon }}"></i>

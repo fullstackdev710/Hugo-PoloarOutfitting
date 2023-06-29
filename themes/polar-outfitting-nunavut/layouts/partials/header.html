@@ -19,18 +19,21 @@
             {{ $navbar_len := len . }}
             {{ range $i, $nav_item := . }}
             <li class="nav-item dropdown">
-              <a class="nav-item nav-link" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}">
-                {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
-              </a>
               {{ if .HasChildren }}
+              <span class="nav-item nav-link" title="{{ $nav_item.Name }}">
+                {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
+              </span>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 {{ range .Children }}
                 <!--  <a class="dropdown-item " href="{{ .URL }}" >{{ .Name }}</a> -->
                 <a class="dropdown-item " href="{{ .URL | relLangURL }}" {{ if strings.HasPrefix .URL "http" }}
                   target="_blank" {{ end }}>{{ .Name }}</a>
                 {{ end }}
-
               </div>
+              {{else}}
+              <a class="nav-item nav-link" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}">
+                {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
+              </a>
               {{ end }}
 
             </li>

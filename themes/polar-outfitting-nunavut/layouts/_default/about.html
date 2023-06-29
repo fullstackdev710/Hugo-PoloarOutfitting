@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.Params.lang }}">
 {{- partial "head.html" . -}}
 {{ if or (.Params.math) (.Site.Params.math) }}
 {{- partial "math.html" . -}}

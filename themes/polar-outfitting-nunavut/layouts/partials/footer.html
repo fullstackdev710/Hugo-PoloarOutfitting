@@ -18,7 +18,7 @@
          <div class="col-md-3 offset-0 offset-lg-1">
             <div class="midabout">
                {{ with .Site.Params.footerInformation}}
-               <h6>{{ .title }}</h6>
+               <p class="subtitle text-white text-start">{{ .title }}</p>
                {{ end }}
                <ul>
                   {{ with .Site.Menus.main }}
@@ -37,9 +37,9 @@
          <div class="col-md-3 offset-0 offset-lg-1">
             <div class="rightabout">
                {{ with .Site.Params.footerContactus}}
-               <h6>{{ .title }}</h6>
+               <p class="subtitle text-white text-start">{{ .title }}</p>
                <p class="adress">{{ .address }}</p>
-               <span>{{ .tel }}</span><br>
+               <a href="tel:{{ .telNumber }}">{{ .tel }}</a><br>
                Email: <a href="{{ .url }}">{{ .text }}</a>
                {{ end }}
                <ul class="mt-3">

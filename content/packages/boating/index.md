@@ -1,5 +1,5 @@
 ---
-title: "boating"
+title: "Boating"
 bgImg: "/img/packages/package-boating-featured.webp"
 layout: packages/boating
 type: carousel

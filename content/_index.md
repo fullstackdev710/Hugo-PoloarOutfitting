@@ -1,5 +1,5 @@
 +++
-title = "Home"
+title = "Nunavut's #1 Arctic Outfitter"
 +++
 
 ## MetaField

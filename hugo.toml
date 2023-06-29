@@ -45,8 +45,10 @@ summaryLength = 70
 paginate = 10
 
 [params]
+lang = "en"
 author = ""
 description = ""
+seoTitle = "Polar Outfitting Iqaluit"
 favicon = "/img/favico.png"  # path to a .ico to use as favicon
 logo = "/img/PolarOutfittingLogo-Yellow.png"  # url or path to a logo to put in the header
 logo_black = "/img/PolarOutfittingLogo-Black.png"  # url or path to a logo to put in the header
@@ -65,14 +67,10 @@ title = "Site Map"
 title = "Contact"
 address = "Adress: 6-XXX City Road OTTAWA, ONTARIO K2L 1T9 CANADA"
 tel = "Tel: +1 987-654-3210"
+telNumber = "19876543210"
 url = "mailto:contact@us.ca"
 text = "contact@us.ca"
 
-
-[[params.socialIcons]]
-icon = "fab fa-twitter"
-title = "Twitter"
-url = "https://twitter.com/i/flow/login"
 
 [[params.socialIcons]]
 icon = "fas fa-envelope"
