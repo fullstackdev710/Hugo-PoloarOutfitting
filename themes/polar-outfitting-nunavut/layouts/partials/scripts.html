@@ -8,11 +8,11 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
 {{ if and .Site.Params.enable.enableGoogleMaps .Site.Params.enable.googleMapsApiKey }}
 <script src="//maps.googleapis.com/maps/api/js?key={{.Site.Params.enable.googleMapsApiKey}}&v=3.exp"></script>
-<script src="{{ "js/hpneo.gmaps.js" | relURL }}"></script>
+{{/*  <script src="{{ "js/hpneo.gmaps.js" | relURL }}"></script>  */}}
 <script src="{{ "js/gmaps.init.js" | relURL }}"></script>
 {{ end }}
 {{ if and .Site.Params.enable.enableRecaptchaInContactForm .Site.Params.enable.googleRecaptchaKey }}
-<script src="//www.google.com/recaptcha/api.js" async defer></script>
+{{/*  <script src="//www.google.com/recaptcha/api.js" async defer></script>  */}}
 {{ end }}
 <script src="{{ "js/front.js" | relURL }}"></script>
 
