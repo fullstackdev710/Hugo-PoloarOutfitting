@@ -19,12 +19,23 @@
     type="text/css"
   />
 
-  <link href="/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <link
+    href="/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    async
+    defer
+    rel="stylesheet"
+  />
+  <script
+    src="/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"
+    async
+    defer
+  ></script>
 
   <link
     rel="stylesheet"
     href="/libs/font-awesome/fontawesome-free-6.4.0-web/css/all.min.css"
+    async
+    defer
   />
 
   {{ $style := resources.Get "sass/custom.scss" | resources.ExecuteAsTemplate
@@ -72,8 +83,8 @@
       "name": "Polar Outfitting Iqaluit, Nunavut",
       "url": "https://polaroutfittingnunavut.ca/",
       "sameAs": ["https://facebook.com"],
-      "logo": "https://some/image.jpg",
-      "image": "https://some/image.jpg",
+      "logo": "/img/PolarOutfittingLogo-Yellow.png",
+      "image": "/img/PolarOutfittingLogo-Yellow.png",
       "description": "This is a description of the website",
       "address": {
         "@type": "PostalAddress",
