@@ -47,7 +47,7 @@ paginate = 10
 [params]
 lang = "en"
 author = ""
-description = ""
+description = "Polar Outfitting Iqaluit"
 seoTitle = "Polar Outfitting Iqaluit"
 favicon = "/img/favico.png"  # path to a .ico to use as favicon
 logo = "/img/PolarOutfittingLogo-Yellow.png"  # url or path to a logo to put in the header
@@ -57,7 +57,7 @@ contact_form_ajax = true
 
 [params.footer]
 text = "© Copyright 2023 Polar Outfitting Nunavut"
-url = ""
+url = "/"
 description = "Fifth abundantly made Give sixth hath. Cattle creature i be don’t them behold green moved fowl Moved life us beast good yielding. Have bring."
 
 [params.footerInformation]

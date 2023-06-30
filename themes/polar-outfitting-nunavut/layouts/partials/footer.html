@@ -66,7 +66,8 @@
          <div class="d-flex justify-content-center gap-3">
             {{ $navbar_len := len . }}
             {{ range $i, $nav_item := . }}
-            <a class="text-decoration-underline text-white" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}">
+            <a class="text-decoration-underline text-white" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}"
+               aria-label="{{ $nav_item.Name }}">
                <small class="text-white">
                   {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
                </small>

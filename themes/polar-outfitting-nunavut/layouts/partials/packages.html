@@ -43,7 +43,7 @@
                     {{ end }}
                     <h3>{{ $element.name | markdownify }}</h3>
                     <p>{{ $element.description | markdownify }}</p>
-                    <a href="{{ $element.url }}">Read More</a>
+                    <a href="{{ $element.url }}" aria-label="{{ $element.name }}">Read More</a>
                 </div>
             </div>
 
