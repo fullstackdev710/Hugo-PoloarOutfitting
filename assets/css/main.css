@@ -40,6 +40,9 @@
   .nav-item .dropdown-menu {
     padding-left: 40px;
   }
+  .dropdown-item {
+    line-height: 1.8 !important;
+  }
 }
 #heading-breadcrumbs ul.breadcrumb {
   margin-top: 5px;
