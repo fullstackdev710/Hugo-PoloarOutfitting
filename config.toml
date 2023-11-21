@@ -75,7 +75,7 @@ text = "polaroutfitting@gmail.com"
 [[params.socialIcons]]
 icon = "fas fa-envelope"
 title = "E-mail"
-url = "#"
+url = "mailto:polaroutfitting@gmail.com"
 
 [[params.socialIcons]]
 icon = "fab fa-facebook"
