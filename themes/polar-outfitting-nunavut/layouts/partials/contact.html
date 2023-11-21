@@ -17,7 +17,7 @@
             <div class="col-md-3  offset-md-1">
               <h4>{{ .subtitle | safeHTML }}</h4>
               <p>{{ .address | safeHTML }}</p>
-              <span>Tel: {{ .tel | safeHTML }}</span><br>
+              <span>Tel: <a href="tel:{{ .telNumber | safeHTML }}">{{ .tel | safeHTML }}</a></span><br>
               <span>Email: <a href="{{ .emailurl | safeHTML }}"> {{ .email | safeHTML}}</a></span>
             </div>
           </div>

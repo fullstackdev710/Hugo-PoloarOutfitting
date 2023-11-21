@@ -66,10 +66,10 @@ title = "Site Map"
 [params.footerContactus]
 title = "Contact"
 address = "Adress: 6-XXX City Road OTTAWA, ONTARIO K2L 1T9 CANADA"
-tel = "Tel: +1 987-654-3210"
-telNumber = "19876543210"
-url = "mailto:contact@us.ca"
-text = "contact@us.ca"
+tel = "Tel: +1-867-975-1600"
+telNumber = "18679751600"
+url = "mailto:polaroutfitting@gmail.com"
+text = "polaroutfitting@gmail.com"
 
 
 [[params.socialIcons]]
