@@ -20,9 +20,9 @@
             {{ range $i, $nav_item := . }}
             <li class="nav-item dropdown">
               {{ if .HasChildren }}
-              <span class="nav-item nav-link" title="{{ $nav_item.Name }}">
+              <a class="nav-item nav-link" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}">
                 {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
-              </span>
+              </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 {{ range .Children }}
                 <!--  <a class="dropdown-item " href="{{ .URL }}" >{{ .Name }}</a> -->
