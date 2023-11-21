@@ -77,7 +77,9 @@ h1, .h1, h2, .h2, h3, .h3 {
     font-family: $font-family;
     line-height: 1.4;
 }
-
+ul {
+  margin-left: 20px;
+}
 .navbar-brand {
     @extend %link-dark;
     font-size: 2rem;

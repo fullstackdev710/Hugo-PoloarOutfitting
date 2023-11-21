@@ -5,11 +5,11 @@
             <h2>{{ .Site.Params.howtouse.title }}</h2>
          </div>
 
-         <div class="row align-items-center">
+         <div class="row">
             {{ range .Site.Data.howtouse }}
 
             <div class="col-md-4">
-               <div class="howtouseit">
+               <div class="howtouseit h-100">
                   <h2>{{ .title | safeHTML }}</h2>
                   <p>{{ .description | safeHTML }}</p>
                </div>

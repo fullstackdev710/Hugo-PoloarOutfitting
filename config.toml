@@ -58,7 +58,7 @@ contact_form_ajax = true
 [params.footer]
 text = "© Copyright 2023 Polar Outfitting Nunavut"
 url = "/"
-description = "Fifth abundantly made Give sixth hath. Cattle creature i be don’t them behold green moved fowl Moved life us beast good yielding. Have bring."
+description = "Your portal to Iqaluit's mesmerizing Arctic wonders. From thrilling escapades to cultural deep-dives, we're committed to delivering authentic Nunavut experiences. Embrace the Arctic with us."
 
 [params.footerInformation]
 title = "Site Map"
@@ -191,7 +191,7 @@ weight     = 3
 
 [params.hero]
 enable = true
-hero_text = "Progressive Investor Relations & Consulting"
+hero_text = "Embrace the Arctic Spirit with Inuit Adventure, Culture & Beyond!"
 hero_text_color = "#FFB600"
 hero_text_dropshadow = true
 hero_text_dropshadow_color = "#6AADF0"
@@ -223,7 +223,7 @@ pre = "Contact Us"
 [params.packages]
 enable = true
 title = "Packages"
-subtitle = "Get out of the business of being in the business."
+subtitle = "Curated Experiences From Icy Expeditions to Cultural Immersions in Iqaluit."
 cols = 3 # Default: 3, Available values 2,3,4,6
 
 [params.WheretoBuy]
@@ -233,7 +233,7 @@ subtitle = "Where to Buy Lorum spum text business of being in the business."
 
 [params.howtouse]
 enable = true
-title = "How to Use" 
+title = "Your Arctic Adventure Awaits in 3 Simple Steps:" 
 
 [params.contact]
 enable = true
