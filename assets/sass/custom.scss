@@ -203,6 +203,7 @@ ul {
   position: relative;
     a {
         @extend %link-dark;
+        text-decoration: none !important
     }
     ul {
       list-style: none;
