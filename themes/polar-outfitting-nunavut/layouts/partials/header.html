@@ -6,11 +6,10 @@
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="/" title="{{ .Site.Title }}">
           {{ with .Site.Params.logo }}
-          <img src="{{ . | absURL }}" class="header-logo" alt="logo">
+          <img src="{{ . | absURL }}" class="header-logo" alt="logo" width="1022" height="931" style="width: 100%; height: auto;">
           {{ end }}
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -26,8 +25,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 {{ range .Children }}
                 <!--  <a class="dropdown-item " href="{{ .URL }}" >{{ .Name }}</a> -->
-                <a class="dropdown-item " href="{{ .URL | relLangURL }}" {{ if strings.HasPrefix .URL "http" }}
-                  target="_blank" {{ end }}>{{ .Name }}</a>
+                <a class="dropdown-item " href="{{ .URL | relLangURL }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" {{ end }}>{{ .Name }}</a>
                 {{ end }}
               </div>
               {{else}}

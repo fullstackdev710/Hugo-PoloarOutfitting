@@ -2,12 +2,12 @@
    <div class="row">
       <div class="heading text-center">
          <div class="ready-wrap">
-            <video width="100%" height="auto" autoplay="" loop="" muted="">
-               <source src="/video/home-hero-video.webm" type="video/webm">
+            <video class="lazy" width="100%" height="auto" autoplay muted loop playsinline>
+               <source data-src="/video/home-hero-video.webm" type="video/webm">
                {{/*
                <source src="/video/home-hero-video.mp4" type="video/mp4"> */}}
             </video>
-            <img src="/img/are-you-ready.webp" alt="Are You Ready?">
+            <img src="/img/are-you-ready.webp" alt="Are You Ready?" width="888" height="113" style="width: 100%; height: auto;">
          </div>
       </div>
    </div>
@@ -16,3 +16,32 @@
    </div>
    <!-- /.row -->
 </div>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+      if ("IntersectionObserver" in window) {
+         var lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (video) {
+               if (video.isIntersecting) {
+                  for (var source in video.target.children) {
+                     var videoSource = video.target.children[source];
+                     if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                        videoSource.src = videoSource.dataset.src;
+                     }
+                  }
+
+                  video.target.load();
+                  video.target.classList.remove("lazy");
+                  lazyVideoObserver.unobserve(video.target);
+               }
+            });
+         });
+
+         lazyVideos.forEach(function (lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+         });
+      }
+   });
+</script>
