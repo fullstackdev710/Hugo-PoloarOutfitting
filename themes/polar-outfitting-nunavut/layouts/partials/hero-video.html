@@ -63,7 +63,7 @@
 <section class="m-0">
    <div class="home-video-hero">
       <div class="main-video">
-         <video width="100%" height="500" autoplay="" loop="" muted="">
+         <video class="lazy" width="100%" height="500" autoplay="" loop="" muted="">
             <source src="/video/home-hero-video.webm" type="video/webm">
             {{/*
             <source src="/video/home-hero-video.mp4" type="video/mp4"> */}}
@@ -75,8 +75,7 @@
                <div class="row text-center">
                   <div class="col-xs-12">
                      {{if .Site.Params.hero.hero_text_dropshadow }}
-                     <h1 class="mb-3 hero-title"
-                        style="color: {{ .Site.Params.hero.hero_text_color }};  text-shadow: {{ .Site.Params.hero.hero_text_dropshadow_amount }} {{ .Site.Params.hero.hero_text_dropshadow_color }}; ">
+                     <h1 class="mb-3 hero-title" style="color: {{ .Site.Params.hero.hero_text_color }};  text-shadow: {{ .Site.Params.hero.hero_text_dropshadow_amount }} {{ .Site.Params.hero.hero_text_dropshadow_color }}; ">
                         {{
                         .Site.Params.hero.hero_text }}</h1>
                      {{else}}
@@ -87,9 +86,7 @@
                      <h4 class="mb-3 d-none">{{ .Site.Params.heros.subtitle }}</h4>
                      <div class="btnsectHero">
                         {{ if .Site.Params.hero.hero_button }}
-                        <a class="btn-default hero-btn" aria-label="Go to About"
-                           style="color: {{ .Site.Params.hero.hero_button_color }}; background-color: {{ .Site.Params.hero.hero_button_bg_color }};"
-                           href=" {{ .Site.Params.hero.hero_button_link | safeURL }}">{{
+                        <a class="btn-default hero-btn" aria-label="Go to About" style="color: {{ .Site.Params.hero.hero_button_color }}; background-color: {{ .Site.Params.hero.hero_button_bg_color }};" href=" {{ .Site.Params.hero.hero_button_link | safeURL }}">{{
                            .Site.Params.hero.hero_button_text }}
                         </a>
                         {{ end }}
@@ -112,3 +109,32 @@
       <div id="second-panel"></div>
    </div>
 </section>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+      if ("IntersectionObserver" in window) {
+         var lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (video) {
+               if (video.isIntersecting) {
+                  for (var source in video.target.children) {
+                     var videoSource = video.target.children[source];
+                     if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                        videoSource.src = videoSource.dataset.src;
+                     }
+                  }
+
+                  video.target.load();
+                  video.target.classList.remove("lazy");
+                  lazyVideoObserver.unobserve(video.target);
+               }
+            });
+         });
+
+         lazyVideos.forEach(function (lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+         });
+      }
+   });
+</script>
