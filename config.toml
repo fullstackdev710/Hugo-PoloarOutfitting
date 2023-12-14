@@ -33,8 +33,6 @@ contact_form_ajax = true
     enableRecaptchaInContactForm = true
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
-# - form actin key set here / Your form's endpoint is:
-    formspreekey = "xdorrqyj"
 
 
 
@@ -52,6 +50,9 @@ seoTitle = "Polar Outfitting Iqaluit"
 favicon = "/img/favico.png"  # path to a .ico to use as favicon
 logo = "/img/PolarOutfittingLogo-Yellow.png"  # url or path to a logo to put in the header
 logo_black = "/img/PolarOutfittingLogo-Black.png"  # url or path to a logo to put in the header
+
+# - form actin key set here / Your form's endpoint is:
+formspreekey = "xdorrqyj"
 formspree_action = "https://formspree.io/f/xdorrqyj"
 contact_form_ajax = true
 
