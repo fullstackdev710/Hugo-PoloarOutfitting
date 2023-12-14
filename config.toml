@@ -15,6 +15,9 @@ defaultContentLanguage = "en"
 
     latitude = "-12.043333"
     longitude = "-77.028333"
+    
+
+
 
 # - register your account to https://formspree.io/register
     # - login and create new form
@@ -26,11 +29,10 @@ defaultContentLanguage = "en"
     # Enable the contact form by entering your Formspree.io endpoint url
 formspree_action = "https://formspree.io/f/xdorrqyj"
 contact_form_ajax = true
-# - form actin key set here / Your form's endpoint is:
-formspreekey = "xdorrqyj"
 
     enableRecaptchaInContactForm = true
     googleRecaptchaKey = "site_key_for_google_recaptcha"
+
 
 
 
@@ -49,7 +51,10 @@ seoTitle = "Polar Outfitting Iqaluit"
 favicon = "/img/favico.png"  # path to a .ico to use as favicon
 logo = "/img/PolarOutfittingLogo-Yellow.png"  # url or path to a logo to put in the header
 logo_black = "/img/PolarOutfittingLogo-Black.png"  # url or path to a logo to put in the header
-
+formspree_action = "https://formspree.io/f/xdorrqyj"
+contact_form_ajax = true
+# - form actin key set here / Your form's endpoint is:
+formspreekey = "xdorrqyj"
 
 [params.footer]
 text = "© Copyright 2023 Polar Outfitting Nunavut"

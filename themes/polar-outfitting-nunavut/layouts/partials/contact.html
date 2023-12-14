@@ -22,8 +22,10 @@
             </div>
           </div>
         </div>
+
+        {{ end }}
         <div class="col-md-12 mt-5">
-          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{{ .Site.formspreekey }}" method="post">
+          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{{ .Site.Params.formspreekey }}" method="post">
             <fieldset id="fs-frm-inputs">
               <div class="row">
                 <div class="col-md-6">
@@ -41,7 +43,6 @@
             <input type="submit" value="Submit">
           </form>
         </div>
-        {{ end }}
       </div>
     </div>
   </div>
